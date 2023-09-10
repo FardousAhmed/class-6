@@ -1,0 +1,158 @@
+/* *COMMON CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* *COMMON CSS END */
+
+/* *1ST NAVBAR STARTS */
+nav {
+  text-align: center;
+  background: -webkit-linear-gradient(
+    to right,
+      #81c4ff,
+      #16588e,
+      #e7222e
+  );
+  background: linear-gradient(
+    to right,
+      #81c4ff,
+      #16588e,
+      #e7222e
+  );
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: arial;
+  color: white;
+  
+  font-size: 18px;
+  padding: 15px 23px;
+  display: block;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+ nav ul li a::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff3b;
+    position: absolute;
+    border-radius: 12px 0 0 12px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.35s;
+}
+
+ nav ul li:hover a::before{
+    width: 50%;
+ }
+
+ nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff3b;
+    position: absolute;
+    border-radius: 0 12px 12px 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.35s;
+}
+
+ nav ul li:hover a::after{
+    width: 50%;
+ }
+
+/* *1ST NAVBAR ENDS */
+
+/* *2ND NAVBAR STARTS */
+
+.nav2 {
+  text-align: center;
+  background: -webkit-linear-gradient(
+    to right,
+      #81c4ff,
+      #16588e,
+      #e7222e
+  );
+  background: linear-gradient(
+    to right,
+      #81c4ff,
+      #16588e,
+      #e7222e
+  );
+  padding: 10px 0;
+}
+
+.nav2 ul li {
+  display: inline-block;
+}
+
+.nav2 ul li a {
+  font-family: arial;
+  color: white;
+  
+  font-size: 18px;
+  padding: 15px 23px;
+  display: block;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+ .nav2 ul li a::before {
+    content: '';
+    width: 0%;
+    height: 10%;
+    background-color: #ffffff3b;
+    position: absolute;
+    border-radius:5px 0 0 5px ;
+    bottom:80%;
+    left: 0;
+    z-index: -1;
+    transition: 0.35s linear;
+}
+
+ .nav2 ul li:hover a::before{
+    width: 100%;
+ }
+
+ .nav2 ul li a::after {
+    content: '';
+    width: 0%;
+    height: 10%;
+    background-color: #ffffff3b;
+    position: absolute;
+    border-radius:0 5px 5px 0;
+    top: 80%;
+    right: 0;
+    z-index: -1;
+    transition: 0.35s linear;
+}
+
+ .nav2 ul li:hover a::after{
+    width: 100%;
+ }
+
+ /* *2ND NAVBAR ENDS */
